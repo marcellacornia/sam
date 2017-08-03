@@ -97,18 +97,6 @@ def gaussian_priors_init(shape, name=None):
     return K.variable(np.concatenate((means, covars), axis=0), name=name)
 
 
-def schedule_vgg(epoch):
-    lr = [1e-4, 1e-4, 1e-4, 1e-5, 1e-5,
-          1e-5, 1e-6, 1e-6, 1e-6, 1e-6]
-    return lr[epoch]
-
-
-def schedule_resnet(epoch):
-    lr = [1e-4, 1e-4, 1e-5, 1e-5, 1e-6,
-          1e-6, 1e-7, 1e-7, 1e-8, 1e-8]
-    return lr[epoch]
-
-
 def sam_vgg(x):
     # Dilated Convolutional Network
     dcn = dcn_vgg(input_tensor=x[0])
