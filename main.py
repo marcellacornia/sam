@@ -7,7 +7,7 @@ import os, cv2, sys
 import numpy as np
 from config import *
 from utilities import preprocess_images, preprocess_maps, preprocess_fixmaps, postprocess_predictions
-from models import sam_vgg, sam_resnet, schedule_vgg, schedule_resnet, kl_divergence, correlation_coefficient, nss
+from models import sam_vgg, sam_resnet, kl_divergence, correlation_coefficient, nss
 
 
 def generator(b_s, phase_gen='train'):
@@ -76,15 +76,13 @@ if __name__ == '__main__':
                 m.fit_generator(generator(b_s=b_s), nb_imgs_train, nb_epoch=nb_epoch,
                                 validation_data=generator(b_s=b_s, phase_gen='val'), nb_val_samples=nb_imgs_val,
                                 callbacks=[EarlyStopping(patience=3),
-                                           ModelCheckpoint('weights.sam-vgg.{epoch:02d}-{val_loss:.4f}.pkl', save_best_only=True),
-                                           LearningRateScheduler(schedule=schedule_vgg)])
+                                           ModelCheckpoint('weights.sam-vgg.{epoch:02d}-{val_loss:.4f}.pkl', save_best_only=True)])
             elif version == 1:
                 print("Training SAM-ResNet")
                 m.fit_generator(generator(b_s=b_s), nb_imgs_train, nb_epoch=nb_epoch,
                                 validation_data=generator(b_s=b_s, phase_gen='val'), nb_val_samples=nb_imgs_val,
                                 callbacks=[EarlyStopping(patience=3),
-                                           ModelCheckpoint('weights.sam-resnet.{epoch:02d}-{val_loss:.4f}.pkl', save_best_only=True),
-                                           LearningRateScheduler(schedule=schedule_resnet)])
+                                           ModelCheckpoint('weights.sam-resnet.{epoch:02d}-{val_loss:.4f}.pkl', save_best_only=True)])
 
         elif phase == "test":
             # Output Folder Path
