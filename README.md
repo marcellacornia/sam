@@ -7,8 +7,6 @@ _IEEE Transactions on Image Processing, 2018_
  
 The PDF of the article is available at this [link](http://aimagelab.ing.unimore.it/imagelab/pubblicazioni/2018-tip.pdf).
 
-Please cite using the following Bibtex code:
-
 
 ## Abstract
 
