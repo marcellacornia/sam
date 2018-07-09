@@ -4,6 +4,18 @@ This repository contains the reference code for computing SAM (Saliency Attentiv
 _Marcella Cornia, Lorenzo Baraldi, Giuseppe Serra, Rita Cucchiara_  
 _Predicting Human Eye Fixations via an LSTM-based Saliency Attentive Model_  
 _IEEE Transactions on Image Processing, 2018_
+
+Please cite with the following Bibtex code:
+
+```
+@article{cornia2018predicting,
+  author = {Cornia, Marcella and Baraldi, Lorenzo and Serra, Giuseppe and Cucchiara, Rita},
+  title = {{Predicting Human Eye Fixations via an LSTM-based Saliency Attentive Model}},
+  journal = {IEEE Transactions on Image Processing},
+  year = {2018}
+}
+```
+
  
 The PDF of the article is available at this [link](http://aimagelab.ing.unimore.it/imagelab/pubblicazioni/2018-tip.pdf).
 
