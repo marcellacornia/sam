@@ -12,12 +12,31 @@ Please cite with the following Bibtex code:
   author = {Cornia, Marcella and Baraldi, Lorenzo and Serra, Giuseppe and Cucchiara, Rita},
   title = {{Predicting Human Eye Fixations via an LSTM-based Saliency Attentive Model}},
   journal = {IEEE Transactions on Image Processing},
+  volume={27},
+  number={10},
+  pages={5142--5154},
   year = {2018}
 }
 ```
-
  
 The PDF of the article is available at this [link](http://aimagelab.ing.unimore.it/imagelab/pubblicazioni/2018-tip.pdf).
+
+Additional experimental results are reported in the following short paper:
+
+_Marcella Cornia, Lorenzo Baraldi, Giuseppe Serra, Rita Cucchiara_  
+_SAM: Pushing the Limits of Saliency Prediction Models_  
+_Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops, 2018_
+
+Please cite with the following Bibtex code:
+
+```
+@article{cornia2018sam,
+  author = {Cornia, Marcella and Baraldi, Lorenzo and Serra, Giuseppe and Cucchiara, Rita},
+  title = {{SAM: Pushing the Limits of Saliency Prediction Models}},
+  journal = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},
+  year = {2018}
+}
+```
 
 
 ## Abstract
@@ -52,13 +71,17 @@ Note: To train our model, both binary fixation maps and groundtruth density maps
 
 ## Pretrained Models
 Download one of the following pretrained models and save it in the code folder:
-* SAM-VGG trained on SALICON: **[sam-vgg_salicon_weights.pkl](https://github.com/marcellacornia/sam/releases/download/1.0/sam-vgg_salicon_weights.pkl)**
-* SAM-ResNet trained on SALICON: **[sam-resnet_salicon_weights.pkl](https://github.com/marcellacornia/sam/releases/download/1.0/sam-resnet_salicon_weights.pkl)**
+* SAM-VGG trained on SALICON (2015 release): **[sam-vgg_salicon_weights.pkl](https://github.com/marcellacornia/sam/releases/download/1.0/sam-vgg_salicon_weights.pkl)**
+* SAM-ResNet trained on SALICON (2015 release): **[sam-resnet_salicon_weights.pkl](https://github.com/marcellacornia/sam/releases/download/1.0/sam-resnet_salicon_weights.pkl)**
+* SAM-ResNet trained on SALICON (2017 release): **[sam-resnet_salicon2017_weights.pkl](https://github.com/marcellacornia/sam/releases/download/1.0/sam-resnet_salicon2017_weights.pkl)**
 
 ## Precomputed Saliency Maps
 We provide saliency maps predicted by SAM-VGG and SAM-ResNet for three standard datasets (SALICON, MIT1003 and CAT2000):
 * **[SAM-VGG predictions](https://github.com/marcellacornia/sam/releases/download/1.0/sam-vgg_predictions.zip)**
 * **[SAM-ResNet predictions](https://github.com/marcellacornia/sam/releases/download/1.0/sam-resnet_predictions.zip)**
+
+In addition, we provide saliency maps predicted by SAM-ResNet on the new release of the SALICON dataset:
+* **[SAM-ResNet predictions (SALICON 2017)](https://github.com/marcellacornia/sam/releases/download/1.0/sam-resnet_predictions_salicon2017.zip)**
 
 ## Contact
 For more datails about our research please visit our [page](http://imagelab.ing.unimore.it/imagelab/researchActivity.asp?idActivity=30).
