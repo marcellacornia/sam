@@ -30,10 +30,10 @@ _Proceedings of the IEEE/CVF International Conference on Computer Vision and Pat
 Please cite with the following Bibtex code:
 
 ```
-@article{cornia2018sam,
+@inproceedings{cornia2018sam,
   author = {Cornia, Marcella and Baraldi, Lorenzo and Serra, Giuseppe and Cucchiara, Rita},
   title = {{SAM: Pushing the Limits of Saliency Prediction Models}},
-  journal = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},
   year = {2018}
 }
 ```
