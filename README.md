@@ -46,6 +46,7 @@ Data-driven saliency has recently gained a lot of attention thanks to the use of
 ![sam-fig](https://raw.githubusercontent.com/marcellacornia/sam/master/figs/model.jpg)
 
 ## Requirements
+* Python 2.7
 * [Theano](https://github.com/Theano/Theano) 0.9.0
 * [Keras](https://github.com/fchollet/keras) 1.1.0, configured for using Theano as backend 
 * OpenCV 3.0.0
